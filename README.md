@@ -1,5 +1,3 @@
 # ABAP
 
 ABAP basics
-
-
