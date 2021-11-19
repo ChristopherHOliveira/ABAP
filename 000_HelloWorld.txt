@@ -1,8 +1,0 @@
-ABAP
-
-ABAP (Allgemeiner Berichts Aufbereitungs Prozessor) means literally 'General Report-Consolidating Processor'
-or 'Processador de Criação de Relatórios Gerais', also an acronym for 'Advanced Business Application Programming'.
-
-ABAP is a programming language created by SAP (Systeme, Anwendungen und Produkte in der Datenverarbeitung)
-or 'Systems, Applications and Products in data processing'.
-

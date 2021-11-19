@@ -1,0 +1,23 @@
+ABAP
+
+ABAP (Allgemeiner Berichts Aufbereitungs Prozessor) means literally 'General Report-Consolidating Processor'
+or 'Processador de Criação de Relatórios Gerais', also an acronym for 'Advanced Business Application Programming'.
+
+ABAP is a programming language developed by SAP (Systeme, Anwendungen und Produkte in der Datenverarbeitung)
+or 'Systems, Applications and Products in data processing'.
+
+Different from other languages, ABAP was specifically developed to be used only in SAP systems.
+
+SAP systems are used by enterprises to take care of all of its business related processes.
+
+So essencialy when programming in ABAP you must have your mindset focused mainly on B2B processes.
+
+There are many SAP products (e.g. CRM, BI, HR, ...) but the mostly known is 'SAP ERP' or 'SAP ECC':
+
+SAP
+ERP  (Enterprise Resource Planning)
+ECC  (Enterprise Central Component)
+X.X  (Version)
+EhPX (Enhancement Paackage)
+
+to be continued...
