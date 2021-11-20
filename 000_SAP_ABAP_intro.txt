@@ -12,12 +12,17 @@ SAP systems are used by enterprises to take care of all of its business related 
 
 So essencialy when programming in ABAP you must have your mindset focused mainly on B2B processes.
 
-There are many SAP products (e.g. CRM, BI, HR, ...) but the mostly known is 'SAP ERP' or 'SAP ECC':
+There are many SAP products (e.g. CRM, BI, HR, PLM, ...) but the mostly known is 'SAP ERP' or 'SAP ECC':
 
 SAP
 ERP  (Enterprise Resource Planning)
 ECC  (Enterprise Central Component)
 X.X  (Version)
-EhPX (Enhancement Paackage)
+EhPX (Enhancement Package)
 
-Work in progress...
+SAP ERP historical overview
+1972 - SAP R/1 ('Real-time data processing')
+197X - SAP R/2 (Presentation and Application layers)
+199X - SAP R/3 1.0; 2.0; 3.1i; 4.0B (Presentation, Application adnd Database layers)
+2001 - SAP R/3 4.6D (+SAP Basis)
+
