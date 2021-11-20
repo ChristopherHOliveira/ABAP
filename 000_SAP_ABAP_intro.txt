@@ -1,10 +1,11 @@
 ABAP
 
+ABAP is a programming language used to develop applications in SAP systems.
+
 ABAP (Allgemeiner Berichts Aufbereitungs Prozessor) means literally 'General Report-Consolidating Processor'
 or 'Processador de Criação de Relatórios Gerais', also an acronym for 'Advanced Business Application Programming'.
 
-ABAP is a programming language developed by SAP (Systeme, Anwendungen und Produkte in der Datenverarbeitung)
-or 'Systems, Applications and Products in data processing'.
+SAP (Systeme, Anwendungen und Produkte in der Datenverarbeitung) means 'Systems, Applications and Products in data processing'.
 
 Different from other languages, ABAP was specifically developed to be used only in SAP systems.
 
@@ -12,7 +13,9 @@ SAP systems are used by enterprises to take care of all of its business related 
 
 So essencialy when programming in ABAP you must have your mindset focused mainly on B2B processes.
 
-There are many SAP products (e.g. CRM, BI, HR, PLM, ...) but the mostly known is 'SAP ERP' or 'SAP ECC':
+There are many SAP products (e.g. CRM, BI, HR, PLM, ...) but the mostly known is 'SAP ERP' or 'SAP ECC'.
+
+Understanding how an SAP ERP system woks is vital to understanding ABAP programming.
 
 SAP
 ERP  (Enterprise Resource Planning)
@@ -20,9 +23,19 @@ ECC  (Enterprise Central Component)
 X.X  (Version)
 EhPX (Enhancement Package)
 
+SAP ERP provides 
+
 SAP ERP historical overview
 1972 - SAP R/1 ('Real-time data processing')
 197X - SAP R/2 (Presentation and Application layers)
-199X - SAP R/3 1.0; 2.0; 3.1i; 4.0B (Presentation, Application adnd Database layers)
-2001 - SAP R/3 4.6D (+SAP Basis)
+1992 - SAP R/3 1.0; 2.0; 3.1i; 4.0B (Presentation, Application adnd Database layers)
+2001 - SAP R/3 4.6D Web Application Server / (Basis)
+2002 - SAP R/3 Enterprise 4.7 / Web Application Server 6.2
+2003 - mySAP ERP / Web Application Server 6.3
+2004 - mySAP ERP / ECC 5.0 / NetWeaver / Web Application Server 6.4
+2005 - ERP-ECC 6.0 / Web Applicatio Server 7.0 / NetWeaver 2004s/7
+...  -
+2015 - NetWeaver 7.5
+2016 - EHP 8
 
+Understanding 
