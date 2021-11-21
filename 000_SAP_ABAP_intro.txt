@@ -97,4 +97,28 @@ Types of users:
 Role of an ABAP Consultant:
     Despite a good understanding of the business processes helps to code, it isn't absolutely necessary.
     As ABAP devs, we don't usually interact with end users directly.
-    A functional Center of Excelence (COE) consists of function
+    
+    Functional consultants valuate the customer requirement and decide if it requires technical changes.
+    If so, the functional Center of Excelence (CoE) assign a task to the ABAP CoE:
+        Functional consultant:
+            Prepare a functional requirement document explaining the requirement and listing
+            all the essential information to make the changes needed in the application.
+                e.g. User asks for some extra information to be shown in a report output:
+                        the functional specification will provide the required information, such as:
+                        name of the report
+                        program that should be changed
+                        database tables where the extra information can be found to show in the report output.
+    Functional specification Received by the ABAP CoE is assigned to an ABAP consultant.
+        ABAB consultant:
+            Prepare a technical specification based on the functional specification:
+                The technical specification capture the required changes from a technical perspective
+            Make the necessary changes to the application.
+            The application will be tested by the functional consultant and user in Quality Assurance environment.
+    
+    Typical work:
+        Production support: Fixing bugs
+        Enhancements: enhance the applciation to provide added functionality
+        New projects: develop new applications
+    
+    Changing and Adapting Data Structure
+        
