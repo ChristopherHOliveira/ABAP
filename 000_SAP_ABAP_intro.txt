@@ -94,3 +94,7 @@ Types of users:
         Subject matter experts who help to customize and maintain SAP systems.
         The consultant's area of expertise determines if he is a functional or a technical one.
 
+Role of an ABAP Consultant:
+    Despite a good understanding of the business processes helps to code, it isn't absolutely necessary.
+    As ABAP devs, we don't usually interact with end users directly.
+    A functional Center of Excelence (COE) consists of function
