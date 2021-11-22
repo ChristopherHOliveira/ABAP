@@ -11,7 +11,7 @@ SAP:
     There are many SAP products (e.g. CRM, BI, HR, PLM, SCM, ...) but the mostly known is 'SAP ERP' or 'SAP ECC'.
     Understanding how an SAP ERP system woks is vital to understanding ABAP programming.
 
-    'SAP ECC/ERP' Full name:
+    SAP ECC/ERP' Full name:
         SAP
         ERP  (Enterprise Resource Planning)
         ECC  (Enterprise Central Component)
@@ -121,4 +121,12 @@ Role of an ABAP Consultant:
         New projects: develop new applications
     
     Changing and Adapting Data Structure
-        
+        SAP software is delivered with standard SAP applications and configurations.
+        However, every company may have its company-specific requirements:
+            This is called 'customization'. There are 3 types:
+                Modification:
+                    Standard SAP is modified.
+                Customer enhancement:
+                    Standard SAP applications are enhanced without changing the standard source code.
+                Customer development:
+                    Customers develop applications in SAP system.
