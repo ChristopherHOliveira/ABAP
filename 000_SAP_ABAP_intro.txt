@@ -143,12 +143,11 @@ Role of an ABAP Consultant:
                         Transactions
                         ...
                     All objects created by a customer should start with Y or Z.
-
     
     DEV..._____________________________________________________
     |__________________________________________________________|
     |                            |                             |
-    |          SAP Namespace          Customer Namespace       | 
+    |        SAP Namespace             Customer Namespace      | 
     |                            |                             |
     |                        Repository           _________    |
     |                 _______    |               |.........|   |
@@ -162,3 +161,4 @@ Role of an ABAP Consultant:
     |                            |               Development   |
     |__________________________________________________________|
                                         Customization Overview
+                                        
