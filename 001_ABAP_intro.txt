@@ -73,8 +73,34 @@ Role of an ABAP Consultant:
                                         Customization Overview
 
 Types of applications:
-    Reports
-    Forms
-    Interfaces
-    Transactions
-    ...
+    Typically includes:
+        Reports
+        Forms
+        Interfaces
+        Transactions
+        ...
+    ABAP supports both procedural and object-oriented programming.
+
+RICEF:
+    Acronym for different kind of objects developed in ABAP:
+        Reports:
+            Provides read-only acces to a database.
+            ABAP was originally created mainly for creating reports (as the name suggests).
+            During the reporting process, data is updated by transactions and processed by report programs:
+                e.g. check available stock:
+                    Report pull out this data and present it as a report output
+
+                    B F                  ________         ___________
+                    u u   FI/CO |       /        \       ||         ||      _______________
+                    s n   SD    |      |\________/|      ||  ABAP   ||     |               |
+                    i c   MM    |----> |   SAP    | <----|| Report  ||---->| Report Output |
+                    n t   WM    |      | Database |      || Program ||     |______________/
+                    e i   HR    |       \________/       ||_________||
+                    s o   PP    |
+                    s n
+                      s
+        Intefaces:
+        Conversions:
+        Extensions:
+        Forms:
+
