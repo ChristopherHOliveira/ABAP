@@ -1,0 +1,74 @@
+ABAP:
+    Is a programming language used to develop applications in SAP systems.
+    ABAP (Allgemeiner Berichts Aufbereitungs Prozessor) means 'General Report-Consolidating Processor'
+    'Processador de Criação de Relatórios Gerais', and an acronym for 'Advanced Business Application Programming'.
+    Different from other languages, ABAP was specifically developed to be used only in SAP systems.
+
+Role of an ABAP Consultant:
+    Despite a good understanding of the business processes helps to code, it isn't absolutely necessary.
+    As ABAP devs, we don't usually interact with end users directly.
+    
+    Functional consultants valuate the customer requirement and decide if it requires technical changes.
+    If so, the functional Center of Excelence (CoE) assign a task to the ABAP CoE:
+        Functional consultant:
+            Prepare a functional requirement document explaining the requirement and listing
+            all the essential information to make the changes needed in the application.
+                e.g. User asks for some extra information to be shown in a report output:
+                        the functional specification will provide the required information, such as:
+                        name of the report
+                        program that should be changed
+                        database tables where the extra information can be found to show in the report output.
+    Functional specification Received by the ABAP CoE is assigned to an ABAP consultant.
+        ABAB consultant:
+            Prepare a technical specification based on the functional specification:
+                The technical specification capture the required changes from a technical perspective
+            Make the necessary changes to the application.
+            The application will be tested by the functional consultant and user in Quality Assurance environment.
+    
+    Typical work:
+        Production support: Fixing bugs
+        Enhancements: enhance the applciation to provide added functionality
+        New projects: develop new applications
+    
+    Changing and Adapting Data Structure
+        SAP software is delivered with standard SAP applications and configurations.
+        However, every company may have its company-specific requirements:
+            This is called 'customization'. There are 3 types:
+                Modification:
+                    Standard SAP is modified.
+                    Modifications are lost when system is upgraded or support package is imported
+                Customer enhancement:
+                    Standard SAP applications are enhanced without changing the standard source code.
+                    There are specific openings in the code where you can supplement the SAP standard system.
+                        The enhancements aren't lost in a system upgrade.
+                    SAP provides a variety of enhancements techniques:
+                        User Exits / Customer Exits
+                        Business Add-Ins (BAdIs)
+                        ...
+                    Not every standard SAP object can be enhanced.
+                Customer development:
+                    Customers develop own repository objects:
+                        Tables
+                        Programs
+                        Transactions
+                        ...
+                    All objects created by a customer should start with Y or Z.
+    
+    DEV..._____________________________________________________
+    |__________________________________________________________|
+    |                            |                             |
+    |        SAP Namespace             Customer Namespace      | 
+    |                            |                             |
+    |                        Repository           _________    |
+    |                 _______    |               |.........|   |
+    |                |.......|         _____     |.........|   |
+    |      ____      |......_|   |   _|.....|    |.........|   |
+    |     |....|     |...../        /  .....|    |.........|   |
+    |     |....|     |.....\_    |  \_ .....|    |.........|   |
+    |     |____|     |.......|        |_____|    |.........|   |
+    |  Modification  |_______|   |  Enhancement  |_________|   |
+    |                                              Customer    |
+    |                            |               Development   |
+    |__________________________________________________________|
+                                        Customization Overview
+                                        
