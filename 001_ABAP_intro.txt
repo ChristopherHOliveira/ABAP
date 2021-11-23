@@ -125,6 +125,7 @@ RICEF:
         
         Conversions:
             Similar to inbound interface programs.
+            Sap provides the tool Legacy System Migration Workbench (LSMW)
 
              Legacy System________________      SAP SYSTEM____________________________________
             |                             |    |                                              |
@@ -133,7 +134,19 @@ RICEF:
             |                             |    |      ||  Program  ||  ||Program||            |
             |_____________________________|    |______________________________________________|
 
-
         Extensions:
-        Forms:
+            Programs that extends the funcionality of a standard SAP system.
+            Includes: modifications, enhancements, new evelopments and third-party add-on programs.
 
+        Forms:
+            Similar to report programs, however provide more flexibility in layout design.
+            Used with documents for which the user wants a physical version.
+                e.g. purchase order, ...
+            These documents should meet legal requirements and format.
+            SAP provides various tools with ABAP Workbench:
+                SAPscripts
+                Smart forms
+                Adobe forms
+                ...
+            A typical form layout contains various windows to print different data from the document.
+            
