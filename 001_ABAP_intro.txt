@@ -88,19 +88,52 @@ RICEF:
             ABAP was originally created mainly for creating reports (as the name suggests).
             During the reporting process, data is updated by transactions and processed by report programs:
                 e.g. check available stock:
-                    Report pull out this data and present it as a report output
+                    Report pull out this data and present it as a report output.
 
-                    B F                  ________         ___________
-                    u u   FI/CO |       /        \       ||         ||      _______________
-                    s n   SD    |      |\________/|      ||  ABAP   ||     |               |
-                    i c   MM    |----> |   SAP    | <----|| Report  ||---->| Report Output |
-                    n t   WM    |      | Database |      || Program ||     |______________/
-                    e i   HR    |       \________/       ||_________||
-                    s o   PP    |
+                    B F                
+                    u u   |FI/CO|                        
+                    s n   | SD  |               || ABAP  ||
+                    i c   | MM  |-> |  SAP   |<-||Report ||->|Report Output|
+                    n t   | WM  |   |Database|  ||Program||
+                    e i   | HR  |
+                    s o   | PP  |
                     s n
-                      s
+                      s                     
         Intefaces:
+            Allow data exchange with other systems.
+            Typically two kinds:
+                
+                Inbound interface programs:
+                    Data is received from an external  system and updated in SAP.
+
+                     Legacy/External System_______      SAP SYSTEM____________________________________
+                    |                             |    |                                              |
+                    ||External|  ||Extract||      |    |      ||   ABAP    ||  || ABAP  ||  |  SAP   ||
+                    ||Database|->||Program||->[Extract file]->||Translation||->|| Load  ||->|Database||
+                    |                             |    |      ||  Program  ||  ||Program||            |
+                    |_____________________________|    |______________________________________________|
+
+                Outbound Interface Programs:
+                    Data is extracted from SAP  and pushed to external systems.
+
+                     SAP SYSTEM____________________________________      Legacy/External System________
+                    |                                              |    |                              |
+                    ||  SAP   |  || ABAP  ||  ||   ABAP    ||      |    |      ||External||  |External||
+                    ||Database|->||Extract||->||Translation||->[Extract file]->||  Load  ||->|Database||
+                    |            ||Program||  ||  Program  ||      |    |      ||Program ||            |
+                    |______________________________________________|    |______________________________|
+        
         Conversions:
+            Similar to inbound interface programs.
+
+             Legacy System________________      SAP SYSTEM____________________________________
+            |                             |    |                                              |
+            ||External|  ||Extract||      |    |      ||   ABAP    ||  || ABAP  ||  |  SAP   ||
+            ||Database|->||Program||->[Extract file]->||Translation||->|| Load  ||->|Database||
+            |                             |    |      ||  Program  ||  ||Program||            |
+            |_____________________________|    |______________________________________________|
+
+
         Extensions:
         Forms:
 
