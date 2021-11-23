@@ -126,7 +126,39 @@ Role of an ABAP Consultant:
             This is called 'customization'. There are 3 types:
                 Modification:
                     Standard SAP is modified.
+                    Modifications are lost when system is upgraded or support package is imported
                 Customer enhancement:
                     Standard SAP applications are enhanced without changing the standard source code.
+                    There are specific openings in the code where you can supplement the SAP standard system.
+                        The enhancements aren't lost in a system upgrade.
+                    SAP provides a variety of enhancements techniques:
+                        User Exits / Customer Exits
+                        Business Add-Ins (BAdIs)
+                        ...
+                    Not every standard SAP object can be enhanced.
                 Customer development:
-                    Customers develop applications in SAP system.
+                    Customers develop own repository objects:
+                        Tables
+                        Programs
+                        Transactions
+                        ...
+                    All objects created by a customer should start with Y or Z.
+
+    
+    DEV..._____________________________________________________
+    |__________________________________________________________|
+    |                            |                             |
+    |          SAP Namespace          Customer Namespace       | 
+    |                            |                             |
+    |                        Repository           _________    |
+    |                 _______    |               |.........|   |
+    |                |.......|         _____     |.........|   |
+    |      ____      |......_|   |   _|.....|    |.........|   |
+    |     |....|     |...../        /  .....|    |.........|   |
+    |     |....|     |.....\_    |  \_ .....|    |.........|   |
+    |     |____|     |.......|        |_____|    |.........|   |
+    |  Modification  |_______|   |  Enhancement  |_________|   |
+    |                                              Customer    |
+    |                            |               Development   |
+    |__________________________________________________________|
+                                        Customization Overview
