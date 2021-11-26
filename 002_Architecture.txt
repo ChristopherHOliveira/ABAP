@@ -1,0 +1,13 @@
+3 Tier architecture:
+
+    [Presentation]
+          |
+    [Application]
+          |
+      [Database]--(RDBMS)
+
+    Presentation layer:
+        Consists of the user interface.
+        Runs on the client machine.
+        Uses a Graphical User Interface (GUI)
+        
