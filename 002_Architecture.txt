@@ -9,5 +9,35 @@
     Presentation layer:
         Consists of the user interface.
         Runs on the client machine.
-        Uses a Graphical User Interface (GUI)
-        
+        Uses a standard Graphical User Interface:
+            Web browser
+            SAP GUI
+        Supports various devices (PCs, smartphones, ...) and OS environments.
+        Communication with application layer:
+            Takes iser inputs.
+            Send requests to application server.
+            Display the results received.
+
+    Application layer:
+        Where all the major work is done by ABAP programs.
+        Hosts modules of business functions and executes program codes.
+        It can consist of multiple application servers and a messaging server.
+        Applications executions take place in the application layer.
+        Communication with database to process data requested by user.
+
+    Database layer:
+        Where all persistent data is stored.
+        Is typically managed by a Relational Database Management System (RDBMS):
+            Provides declarative method to maintain data and queries.
+            And the system takes cares of describing the structures for storing data.
+            Data is stored in one or more Tables:
+                Rows and columns are identified by unique key.
+                Tables are related with foreign keys.
+        Supported databases:
+            SAP HANA
+            Oracle
+            MSSQL
+            MaxDB
+            IBM DB/2
+
+            
