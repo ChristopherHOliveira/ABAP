@@ -10,20 +10,73 @@
         Consists of the user interface.
         Runs on the client machine.
         Uses a standard Graphical User Interface:
-            Web browser
-            SAP GUI
+            Web browser:
+                modern web-based applications.
+            SAP GUI:
+                classical SAP GUI-based applications.
         Supports various devices (PCs, smartphones, ...) and OS environments.
         Communication with application layer:
-            Takes iser inputs.
-            Send requests to application server.
-            Display the results received.
+            Takes user inputs.
+            Send requests to application server for processing.
+            Display the formatted output results received.
+        Windows OS:
+            SAP GUI for Windows.
+        Linux/Mac OS:
+            SAP GUI for Java.
+        Web:
+            SAP GUI for HTML:
+                Requires the server to run Internet Transaction Server (ITS):
+                    Performs one-to-one mapping of SAP screen fields to SAP GUI for HTML.
+                Internet Communication Manager (ICM) ensures HTTP, HTTPS, SMTP protocols works propperly.
+
+                [SAP GUI for Windows]  [SAP GUI for Java]  [SAP GUI for HTML]        
+                            |            |                    |
+                    ICM[  [   Dispatcher   ]--------------[   ICM   ]  ]
+                _____________________________________________________________SAP GUI
 
     Application layer:
         Where all the major work is done by ABAP programs.
         Hosts modules of business functions and executes program codes.
-        It can consist of multiple application servers and a messaging server.
+        It can consist of:
+            Multiple application servers:
+                which interprets ABAP programs.
+            A messaging server:
+                responsable for communication between application servers.
         Applications executions take place in the application layer.
         Communication with database to process data requested by user.
+
+        SAP Netweaver:
+            Application server that provides runtime environment for ABAP and Java programs:
+                Pure ABAP: limited support for Java.
+                Pure Java: doesn't support ABAP applications.
+                Dual stack: both
+
+        ABAPers are not directly involved in installation or maintenance of an application server.
+            This is role of Basis consultant.
+            However understanding the components of application server (and their roles)
+                is good for understanding backend processes.
+
+        The components of SAP systems are called instances:
+            Each application server can have multiple wor processes,
+                but only one ICM, dispatcher, gateway and SAP start service.
+            ABAP System Central Services (ASCS):
+                Message Server:
+                    Load ballance and communication between instances.
+                Enqueue Server:
+                    Manages application locks (ensures no two users edit the same data at the same time).
+                Start server(separated):
+            ICM:
+                Enables the application server to communicate with the outsid world (HTTP, HTTPS, SMTP).
+                It 'web-enables' the application server through a web browser.
+                It runs at a separate process, started and monitored by ABAP dispatcher.
+                It can process requests from the internet, such as Web Dympro-based.
+            ABAP Dispatcher:
+                
+            SAP Web Dispatcher
+            Gateway
+            SAP start devices
+            Work processes
+        
 
     Database layer:
         Where all persistent data is stored.
