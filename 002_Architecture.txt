@@ -71,12 +71,31 @@
                 It runs at a separate process, started and monitored by ABAP dispatcher.
                 It can process requests from the internet, such as Web Dympro-based.
             ABAP Dispatcher:
-                
-            SAP Web Dispatcher
-            Gateway
-            SAP start devices
-            Work processes
-        
+                Each application server has a dispatcher. It assign requests to work processes.
+                [User request]->[Dispatcher]->[assign request to an available work process]
+                    e.g. When user log in to a SAP system, the request goes to a message server
+                            which performs load balancing and connects the user to the dispatcher
+                            of an instance with the least load.
+            SAP Web Dispatcher:
+                Lies between the internet and SAP systems.
+            Gateway:
+                Enables the communication with external systems using Remote Function alls (RFCs):
+                    Based on TCP/IP.
+                    Can be made in ABAP programs or usung interface of external programs.
+                Can be used between processes of an instance.
+            SAP start devices:
+                Starts,
+                monitor the runtime state,
+                read logs,
+                and stop SAP system instances.
+            Work processes:
+                User srequests are processed through work processes.
+                There may exists multiple per application server.
+                [User requests]->[ABAP dispatcher]->[Work Process]
+                                 _________________________________Application Server      
+                Once the work process completes the requests:
+                    it sends back the result,
+                    work process becomes free again to take a new request.
 
     Database layer:
         Where all persistent data is stored.
