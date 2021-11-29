@@ -96,9 +96,22 @@
                 Once the work process completes the requests:
                     it sends back the result,
                     work process becomes free again to take a new request.
+                WP are not dedicated to any user or session.
+                Transaction SM50:
+                    See how work process statuses change.
+                
+                         WP Type           |            Purpose
+                DIA (dialog)               | Handles dialog requests (made from user screens)
+                UPD/UPD2 (update)          | Handles high ans low updates to the database
+                BTC (background processing)| Handles Handles background jobs
+                SPO (spool)                | Handles spool requests
+
+                Trx RZ10:
+                    SAP Basis admin can configure the number of work processes for each type.
 
     Database layer:
-        Where all persistent data is stored.
+        Where all persistent data is stored:
+            + application data, admin data, customizing settings, ABAP source code.
         Is typically managed by a Relational Database Management System (RDBMS):
             Provides declarative method to maintain data and queries.
             And the system takes cares of describing the structures for storing data.
@@ -109,5 +122,8 @@
             SAP HANA
             Oracle
             MSSQL
-            MaxDB
             IBM DB/2
+            SAP liveCache
+            SAP MaxDB
+            SAP HANA (optimized in SAP NetWeaver 7.5)
+            
