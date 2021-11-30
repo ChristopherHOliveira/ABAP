@@ -1,5 +1,7 @@
 REPORT zHelloWorld.
 
-write 'Hello world'.
+PARAMETERS nome_pessoa TYPE string.
 
+WRITE 'Hello world'.
 
+WRITE: 'Hello', nome_pessoa.
