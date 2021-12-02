@@ -5,3 +5,21 @@ PARAMETERS nome_pessoa TYPE string.
 WRITE 'Hello world'.
 
 WRITE: 'Hello', nome_pessoa.
+
+*************************************
+
+Primitive  Data Types:
+    Character-like Types:
+        String:
+            Any characters, arbitrary lenght.
+        c:
+            Any characters, fixed lenght.
+        d:
+            Date, YYYMMDD.
+        t:
+            Time, HHMMSS.
+    Numeric types:
+        i:
+            Integer.
+        p:
+            Packed, decimals.
