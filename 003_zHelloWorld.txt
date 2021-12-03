@@ -1,12 +1,25 @@
 REPORT zHelloWorld.
 
-PARAMETERS nome_pessoa TYPE string.
-
 WRITE 'Hello world'.
+
+*****************************************
+* greets person name
+
+PARAMETERS nome_pessoa TYPE string.
 
 WRITE: 'Hello', nome_pessoa.
 
-*************************************
+*****************************************
+* multiply two numbers
+
+PARAMETERS: num1 TYPE i,
+            num2 TYPE i.
+
+DATA result TYPE p LENGHT 16 DECIMALS 2.
+
+result = num1 * num2.
+
+*****************************************
 
 Primitive  Data Types:
     Character-like Types:
@@ -14,6 +27,7 @@ Primitive  Data Types:
             Any characters, arbitrary lenght.
         c:
             Any characters, fixed lenght.
+            e.g. DATA item_name TYPE c LENGHT 5.
         d:
             Date, YYYMMDD.
         t:
