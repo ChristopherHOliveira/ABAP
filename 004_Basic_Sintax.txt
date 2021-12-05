@@ -3,7 +3,7 @@ Primitive  Data Types:
         String:
             Any characters, arbitrary lenght.
         c:
-            Any characters, fixed lenght.
+            Any characters, fixed lenght (default = 1).
             e.g. DATA item_name TYPE c LENGHT 5.
         d:
             Date, YYYMMDD.
@@ -13,9 +13,10 @@ Primitive  Data Types:
         i:
             Integer.
         p:
-            Packed, decimals.
+            Packed, decimals (default = 8).
 
 ****************************************
+
 * creating an input field and storing the data in nome_pessoa variable:
 PARAMETERS nome_pessoa TYPE string.
 
@@ -28,17 +29,35 @@ WRITE: 'Hello', nome_pessoa.
 PARAMETERS: num1 TYPE i,
             num2 TYPE i.
 
-* delaring a packed number variable:
+* defining a packed number variable:
 DATA result TYPE p LENGHT 16 DECIMALS 2.
+* or DATA result(16) TYPE p DECIMALS 2.
 
 * multiplying the two numbers and storing the result in 'result':
 result = num1 * num2.
 
 *****************************************
 
+* global type example:
+DATA var_1 TYPE type_name.
 
+* like keyword example:
+DATA var_2 TYPE var_1.
 
 *****************************************
 
+* string literal example (hard codded unchangeable values):
+WRITE 'Hello world'.
 
+NEW-LINE.
 
+* numeric literal example:
+WRITE 33.
+
+*****************************************
+
+* constants example (recomended over literals):
+CONSTANTS c_hello TYPE string VALUE 'Hello World'.
+CONSTANTS c_number TYPE I value 123.
+
+*****************************************
