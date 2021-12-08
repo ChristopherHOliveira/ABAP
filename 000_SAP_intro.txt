@@ -88,6 +88,7 @@ Types of users:
         Subject matter experts who help to customize and maintain SAP systems.
         The consultant's area of expertise determines if he is a functional or a technical one.
 
+
 Architecture:
     3 tiers.
 
