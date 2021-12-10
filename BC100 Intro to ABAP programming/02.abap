@@ -1,34 +1,3 @@
-Primitive  Data Types:
-    Character-like Types:
-        String:
-            Any characters, arbitrary lenght.
-        c:
-            Any characters, fixed lenght (default = 1).
-            e.g. DATA item_name TYPE c LENGHT 5.
-        d:
-            Date, YYYMMDD.
-        t:
-            Time, HHMMSS.
-    Numeric types:
-        i:
-            Integer.
-        p:
-            Packed, decimals (default = 8).
-
-****************************************
-
-* creating an input field and storing the data in nome_pessoa variable:
-PARAMETERS nome_pessoa TYPE string.
-
-* displaying a message which uses the variable:
-WRITE: 'Hello', nome_pessoa.
-
-*****************************************
-
-* storing two input numbers:
-PARAMETERS: num1 TYPE i,
-            num2 TYPE i.
-
 * defining a packed number variable:
 DATA result TYPE p LENGHT 16 DECIMALS 2.
 * or DATA result(16) TYPE p DECIMALS 2.
