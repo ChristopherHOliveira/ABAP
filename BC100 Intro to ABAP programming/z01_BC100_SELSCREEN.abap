@@ -1,9 +1,9 @@
 *&---------------------------------------------------------------------*
-*& Report zbc100_13_selscreen
+*& Report zbc100_selscreen
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT zbc100_13_selscreen.
+REPORT zbc100_selscreen.
 
 * input fields for user name and age
 PARAMETERS: p_name TYPE string,            
