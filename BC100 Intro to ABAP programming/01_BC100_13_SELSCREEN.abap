@@ -9,7 +9,8 @@ REPORT zbc100_13_selscreen.
 PARAMETERS: p_name TYPE string,            
             p_age  TYPE i.
 
-WRITE: 'Hello', p_name. " say hello to the user
+* say hello to the user
+WRITE: TEXT-hel, p_name. " using a text symbol in text elements
 
 NEW-LINE.
 
