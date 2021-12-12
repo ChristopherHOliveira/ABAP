@@ -4,7 +4,8 @@
 *&
 *&---------------------------------------------------------------------*
 REPORT BC100_CALC_HOLS_SOL.
-* calculates
+* calculates remaining vacation days 
+* Under construction!
 
 PARAMETERS: pa_name TYPE string, "Input field for user name
             pa_total TYPE i, "Total days annual vacation
