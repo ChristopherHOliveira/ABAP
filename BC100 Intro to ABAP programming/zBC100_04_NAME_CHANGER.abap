@@ -1,9 +1,9 @@
 *&---------------------------------------------------------------------*
-*& Report zBC100_NAME_CHANGER
+*& Report zBC100_04_NAME_CHANGER
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT zBC100_NAME_CHANGER.
+REPORT zBC100_04_NAME_CHANGER.
 * changes your name if your first name is 'Chris'
 
 PARAMETERS: f_name TYPE string,
