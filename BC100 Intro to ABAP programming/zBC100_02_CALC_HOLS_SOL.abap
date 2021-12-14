@@ -12,9 +12,11 @@ PARAMETERS: pa_name TYPE string, "input field for user name
             pa_used TYPE i, "number of vacation days used
             pa_roll TYPE i. "number of days to roll over
 
-DATA gv_remaining TYPE i.
-DATA gv_next_year TYPE i.
-DATA gv_month_avg(16) TYPE p DECIMALS 2. " monthly average vacation days
+DATA gv_remaining TYPE i,
+     gv_next_year TYPE i,
+     gv_month_avg(16) TYPE p DECIMALS 2, " monthly average vacation days
+     gv_first_name TYPE string, " assuming that the user enters a first
+     gv_last_name TYPE string. " and a second name (this exercise do not validate it)
 
 CONSTANTS c_months TYPE i VALUE 12. "quantity of months per year
 
