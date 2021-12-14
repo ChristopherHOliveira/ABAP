@@ -22,12 +22,15 @@ gv_remaining = pa_total - pa_used. " calculate remaining vacation days
 gv_next_year = pa_total + pa_roll. " calulate the number of vacation days for next year
 gv_month_avg = pa_total / c_months. " calculate average vacation days per month
 
-* output the remaining vacation days for the year
-WRITE: gv_remaining, 'vacation days remaining for', pa_name.
+WRITE: icon_flight AS ICON, " output a plane icon,
+       gv_remaining COLOR col_positive, " colored remaining vacation days for the year
+       'vacation days remaining for', pa_name. 
 
 NEW-LINE.
-* output the number of days vacation for next year
-WRITE: gv_next_year, 'vacation days available for next year.'.
+
+WRITE: icon_holiday AS ICON, " output an icon,
+       gv_next_year COLOR col_total, " colored number of days vacation for next year
+       'vacation days available for next year.'.
 
 NEW-LINE.
 
