@@ -23,11 +23,11 @@ DATA gv_result TYPE i.
 
 gv_result = pa_start " first move current total to the result variable
 
-DO pa_years TIMES.
+DO pa_years TIMES. " repeat the same times as worked years:
     gv_result = gv_result + Sy-index " increment the total with the built-in loop counter variable
 
-    IF Sy-index = 5.
-        EXIT.
+    IF Sy-index = 5. " if counter = 5:
+        EXIT. " exit loop
     ENDIF.
 ENDDO.
 
