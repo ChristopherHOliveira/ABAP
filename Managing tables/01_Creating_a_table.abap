@@ -1,8 +1,8 @@
 * Steps to create a simple table:
 
 * 1. Access SE11 transaction.
-* 2. With 'database table' radio button selected, choose a table name and click 'Create'.
-* 3. Provide a short description. (e.g. 'ZMOTOS').
+* 2. With 'database table' radio button selected, choose a table name and click 'Create'. (e.g. 'ZMOTOS').
+* 3. Provide a short description. (e.g. 'Motorcycle data').
 * 4. Choose a Delivery Class: (e.g. 'A', from Application table, for master and transactional data)
 * 5. In Delivery and Maintenance tab:
 *       Choose Data Browser/Table View Maint. (e.g. 'Display/Maintenance Allowed with Restrictions').
