@@ -1,0 +1,12 @@
+Three basic forms to populate a table:
+
+1. Go to SE16n:
+        Type the table name in 'table to be searched' and press f8.
+        Insert a row if you have permission.
+
+2. Go to SE16n:
+        Type the table name in 'table to be searched'.
+        Type '/h' in the SAP GUI command field and press f8. It will enter the debug mode.
+            In Variables 1 tab, type the 'GD-EDIT' variable and set its value to 'X'.
+            Also set the 
+
