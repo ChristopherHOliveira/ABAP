@@ -1,4 +1,4 @@
-Three basic forms to populate a table:
+Three basic example ways to populate a table:
 
 1. Go to SE16n:
         Type the table name in 'table to be searched' and press f8.
@@ -11,6 +11,6 @@ Three basic forms to populate a table:
             Also set the 'GD-SAPEDIT' variable value to 'X'.
             Now the buttons to add new lines in the table will be available.
 
-3. 
+3. Create a program with a selection screen in which the user can add data.
+   (See Z_MOTOCAS.ABAP as example)
             
-
