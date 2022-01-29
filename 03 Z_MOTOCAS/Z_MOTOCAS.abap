@@ -21,3 +21,5 @@ IF  sy-subrc = 0.
 ELSE.
 
 ENDIF.
+
+* comentário só de exemplo
