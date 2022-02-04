@@ -33,7 +33,7 @@ TYPES: BEGIN OF mod_sflight.
 TYPES: new_column TYPE i,
        END OF mod_sflight.
 
-DATA: wa_sflight_custom TYPE mod_sflight,
-      it_sflight_custom TYPE TABLE OF mod_sflight.
+DATA: wa_sflight_custom TYPE mod_sflight, " creating structure the same type of newly modified sflight
+      it_sflight_custom TYPE TABLE OF mod_sflight. " creating internal table the same type of newly modified sflight
 
 * Creating a table from zero:
