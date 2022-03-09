@@ -1,0 +1,24 @@
+How to search for repository objects:
+    SE84 - Access ABAP Repository Information System (also accessed through SE80?)
+            Access Program Library
+                Access Programs, here we can search, display and execute programs.
+                
+    SE81 - Application Hierarchy
+
+Abap Workbench includes all tools required for creating and editing
+repository objects, covering the entire software developing cycle:
+    SE38 - ABAP Editor: editing the source code
+    SE11 - ABAP Dictionary: editing table definitions, data types, ...
+    SE51 - Screen Painter: configuring screens with functions in user dialogs
+    SE41 - Menu Painter: designing user interface components
+    SE37 - Function builder: maintaining function modules
+    SE24 - Class builder: maintaining global classes and interfaces
+
+Creating a package:
+    Access SE80 Object Navigator
+        In the drop-down menu, select Package, enter package name and press return
+        In the dialog box, enter a short description of your package. Assign the
+            package to an application component and a software component
+    In the following dialog box, assign the package to a change request
+        (or create a new change request in the sheet icon)
+
