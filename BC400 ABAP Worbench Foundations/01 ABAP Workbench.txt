@@ -22,3 +22,14 @@ Creating a package:
     In the following dialog box, assign the package to a change request
         (or create a new change request in the sheet icon)
 
+Creating a transaction:
+    Access SE80 Object Navigator
+        Right click on your program, 'Create' -> 'Transaction'
+        Define a transaction code
+        Enter a short text
+        Select 'Program and Selection Screen (Report Transaction)'
+            Select the program name
+            Choose 'Professional User Transaction'
+            Select 'SAP GUI for Windows'
+        Assign the trx to a package and to a change request
+
