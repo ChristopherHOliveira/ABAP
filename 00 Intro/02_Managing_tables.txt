@@ -28,3 +28,22 @@ Steps to create a simple table:
       It also pop up a Workbench request screen, choose or create a crequest.
       Information: Application table should be client-specific
 9. When activating it asks for Enhancement Category, select one in 'extras' menu.
+
+
+POPULATING A TABLE
+Three basic example ways to populate a table:
+
+1. Go to SE16n:
+        Type the table name in 'table to be searched' and press f8.
+        Insert a row if you have permission.
+
+2. If you don't have permission to add new lines, in SE16n:
+        Type the table name in 'table to be searched'.
+        Type '/h' in the SAP GUI command field and press f8. It will enter the debug mode.
+            In 'Variables 1' tab, type the 'GD-EDIT' variable and set its value to 'X'.
+            Also set the 'GD-SAPEDIT' variable value to 'X'.
+            Now the buttons to add new lines in the table will be available.
+
+3. Create a program with a selection screen in which the user can add data.
+   (See Z_MOTOCAS.ABAP as example)
+            

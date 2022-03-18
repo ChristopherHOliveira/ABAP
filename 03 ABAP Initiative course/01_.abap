@@ -37,3 +37,5 @@ DATA: wa_sflight_custom TYPE mod_sflight, " creating structure the same type of 
       it_sflight_custom TYPE TABLE OF mod_sflight. " creating internal table the same type of newly modified sflight
 
 * Creating a table from zero:
+
+* to be continued...

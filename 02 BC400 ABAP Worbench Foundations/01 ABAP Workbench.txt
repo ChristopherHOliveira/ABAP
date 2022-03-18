@@ -33,3 +33,37 @@ Creating a transaction:
             Select 'SAP GUI for Windows'
         Assign the trx to a package and to a change request
 
+Loop types:
+    DO.
+        *statements* (loop counter: sy-index)
+    IF <abort_condition>. EXIT. ENDIF.
+
+    DO n TIMES.
+        *statements* (loop counter: sy-index)
+    ENDDO.
+
+    WHILE <condition>.
+        *statements* (loop counter: sy-index)
+    ENDWHILE.
+
+    SELECT ... FROM <dbtab> ....
+        statements* (Database table rows: sy-dbcnt)
+    ENDSELECT.
+
+    LOOP AT <internal table> ....
+        statements* (Row index for internal table: sy-tabix)
+    ENDLOOP.
+
+Useful System Fields:
+    sy-mandt: Logon client
+    sy-uname: Logon username
+    sy-langu: Logon user language
+    sy-datum: Local ABAP system date
+    sy-uzeit: Local ABAP system time
+    sy-tcode: Current tansaction code
+    sy-repid: Current ABAP program
+    sy-index: Loop counter at DO and WHILE
+    sy-subrc: Indicate whether the statement could be executed succesfully (sy-subrc = 0)
+
+
+

@@ -150,19 +150,21 @@ RICEF:
                 ...
             A typical form layout contains various windows to print different data from the document.
             
-Primitive  Data Types:
-    Character-like Types:
-        String:
-            Any characters, arbitrary lenght.
-        c:
-            Any characters, fixed lenght (default = 1).
-            e.g. DATA item_name TYPE c LENGHT 5.
-        d:
-            Date, YYYMMDD.
-        t:
-            Time, HHMMSS.
-    Numeric types:
-        i:
-            Integer.
-        p:
-            Packed, decimals (default = 8).
+Complete  Data Types:
+    STRING: Any characters (dynamic lenght).
+    XSTRING: HeXadecimal string (dynamic lenght).
+    D: Date, YYYYMMDD (fixed lenght = 8).
+    T: Time, HHMMSS (fixed lenght = 6).
+    I, INT8: Integer (fixed lenght = 4 for 'i' or 8 for 'int8').
+    F: Floating point (fixed lenght = 8).
+    DECFLOAT16, DECFLOAT34: Floating point numbers with mantissa and exponent (8 bytes with 16 decimal places or 16 bytes with 34 decimal places).
+Incomplete Data Types (you have to specify the lenght of the variable):
+    C: Any characters (standard = 1) e.g. DATA item_name TYPE c LENGHT 5.
+    N: Numerical string
+    X: Byte sequence (heXadecimal string)
+    P: Packed, decimals (standard = 8).
+
+Categories of Data Objects can be:
+    Built in: 
+    Global: best practice naming prefix 'gv_...' (or 'gc_...' for constant)
+    Local: best practice naming prefix 'lv_...'
