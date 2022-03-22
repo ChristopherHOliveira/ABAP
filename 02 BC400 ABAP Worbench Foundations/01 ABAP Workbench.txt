@@ -1,9 +1,9 @@
 How to search for repository objects:
-    SE84 - Access ABAP Repository Information System (also accessed through SE80?)
+    1. SE84 - Access ABAP Repository Information System (also accessed through SE80?)
             Access Program Library
                 Access Programs, here we can search, display and execute programs.
                 
-    SE81 - Application Hierarchy
+    2. SE81 - Application Hierarchy
 
 Abap Workbench includes all tools required for creating and editing
 repository objects, covering the entire software developing cycle:
@@ -19,8 +19,8 @@ Creating a package:
         In the drop-down menu, select Package, enter package name and press return
         In the dialog box, enter a short description of your package. Assign the
             package to an application component and a software component
-    In the following dialog box, assign the package to a change request
-        (or create a new change request in the sheet icon)
+        In the following dialog box, assign the package to a change request
+            (or create a new change request in the sheet icon)
 
 Creating a transaction:
     Access SE80 Object Navigator
@@ -65,5 +65,35 @@ Useful System Fields:
     sy-index: Loop counter at DO and WHILE
     sy-subrc: Indicate whether the statement could be executed succesfully (sy-subrc = 0)
 
+Dialog messages:
+    MESSAGE tnnn(message_class).
+    Where a type 't' and a message number 'nnn' are set and attributed to a message class.
+    t / meaning / behaviour / appears in
+    ------------------------------------
+    i / Info / Program continues after breakpoint / Modal dialog box
+    s / Set / Program continues without brakpoint / Status bar of next screen
+    w / Warning / Context-dependent / Status bar
+    e / Error / Context-dependent / Status bar
+    a / Termination / Program terminated / Modal dialog box
+    x / Short dump / dump MESSAGE_TYPE_X / Short dump
 
+Ways to debug:
+    1. To start a program in debug mode:
+        Right click on program (in SE80), then 'Execute', then 'Debugging' or
+        Set a breakpoint in the desired program line
+    2. To start debugging mode at runtime:
+        Execute the program, type '/h' in command field and hit Enter or
+        Access 'System' menu, 'Utilities', 'Debug ABAP'
 
+Modularization techniques
+    1. Local Program Modularization:
+        1.1 Subroutines (always part of the main program) e.g.
+            FORM subroutine_name USING 
+            ENDFORM.
+
+        1.2 Methods in local classes
+    2. Global Modularization:
+        Function Modules organized in Function Groups
+        Methods in global classes
+
+        
