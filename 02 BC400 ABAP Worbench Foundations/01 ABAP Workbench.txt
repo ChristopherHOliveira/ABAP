@@ -86,14 +86,20 @@ Ways to debug:
         Access 'System' menu, 'Utilities', 'Debug ABAP'
 
 Modularization techniques
-    1. Local Program Modularization:
-        1.1 Subroutines (always part of the main program) e.g.
+    1. Local Program Modularization (can be used only by the program itself):
+        1.1 Subroutines (always part of the main program)
+            Pass types:
+                Call by value: pass the global variable to subroutine as a variable copy
+                Call by value and result: pass the global variable to subroutine as a copy and write the processed value back to the original
+                Call by reference: run subroutine directly on the specified parameter
+            
             FORM subroutine_name USING 
             ENDFORM.
 
-        1.2 Methods in local classes
-    2. Global Modularization:
-        Function Modules organized in Function Groups
-        Methods in global classes
 
-        
+
+        1.2 Methods in local classes
+    2. Global Modularization (can be used by any number of programs at the same time):
+        2.1 Function Modules organized in Function Groups
+        2.2 Methods in global classes
+
