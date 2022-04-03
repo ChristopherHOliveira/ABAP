@@ -41,8 +41,6 @@ else.
       gv_result = lv_n1 - lv_n2.
     when '*'.
       gv_result = lv_n1 * lv_n2.
-    when '/'.
-      gv_result = lv_n1 / lv_n2.
     when '%'.
       perform calc_perc(z_calc1_perform) " permorm a subroutine to calculate X % of Y (below)
         using
@@ -82,6 +80,18 @@ else.
 *         ev_power = iv_n1 ** iv_n2.
 *     endif.
 *     ENDFUNCTION.
+      when '/'.
+        call method zcl_division_bc400=>get_division
+        exporting
+            iv_n1 = lv_n1
+            iv_n2 = lv_n2
+        importing
+            iv_result = gv_result.
+*       method GET_DIVISION.  " Called method, just for example
+                
+*         iv_result = iv_n1 / iv_n2.
+                
+*       endmethod.
   endcase.
 
 * and display the result
