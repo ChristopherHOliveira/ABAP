@@ -63,6 +63,25 @@ else.
       if sy-subrc = 1.               " negative_power exception
         message 'In this program, you cannot elevate a number to a negative power' type 'E'.
       endif.
+*      FUNCTION ZFM_BC400TEST1.  " Source code of the called function, just for example
+*     *"----------------------------------------------------------------------
+*     *"*"Local Interface:
+*     *"  IMPORTING
+*     *"     REFERENCE(IV_N1) TYPE  I
+*     *"     REFERENCE(IV_N2) TYPE  I
+*     *"  EXPORTING
+*     *"     REFERENCE(EV_POWER) TYPE  P
+*     *"  EXCEPTIONS
+*     *"      NEGATIVE_POWER
+*     *"----------------------------------------------------------------------
+*     * error handling
+*     if iv_n2 < 0.
+*         raise negative_power.
+*     else.
+*     *   calculate result
+*         ev_power = iv_n1 ** iv_n2.
+*     endif.
+*     ENDFUNCTION.
   endcase.
 
 * and display the result
